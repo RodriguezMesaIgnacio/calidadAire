@@ -87,7 +87,7 @@
                         var c_co2 = "#89d571"
                     } else{
                         if (co2 > 1000) {
-                            var c_co2 = "firebrick"
+                            var c_co2 = "#ff0040"
                         } else {
                             var c_co2 = "#ffff4d"
                         }
@@ -97,7 +97,7 @@
                         var c_nh3 = "#89d571"
                     } else{
                         if (nh3 > 25) {
-                            var c_nh3 = "firebrick"
+                            var c_nh3 = "#ff0040"
                         } else {
                             var c_nh3 = "#ffff4d"
                         }
@@ -107,7 +107,7 @@
                         var c_no = "#89d571"
                     } else{
                         if (no > 40) {
-                            var c_no = "firebrick"
+                            var c_no = "#ff0040"
                         } else {
                             var c_no = "#ffff4d"
                         }
@@ -117,7 +117,7 @@
                         var c_pm10 = "#89d571"
                     } else{
                         if (pm10 > 50) {
-                            var c_pm10 = "firebrick"
+                            var c_pm10 = "#ff0040"
                         } else {
                             var c_pm10 = "#ffff4d"
                         }
@@ -127,7 +127,7 @@
                         var c_pm25 = "#89d571"
                     } else{
                         if (pm25 > 25) {
-                            var c_pm25 = "firebrick"
+                            var c_pm25 = "#ff0040"
                         } else {
                             var c_pm25 = "#ffff4d"
                         }
@@ -142,7 +142,6 @@
                     var hora = time.slice(11,16)
 
                     //Pintamos los datos obtenidos anteriormente en el html(tabla) por id
-                    document.getElementById("pais").innerHTML = pais;
             		document.getElementById("co2").innerHTML = co2;
                     document.getElementById("co2").style.backgroundColor = c_co2;
             		document.getElementById("nh3").innerHTML = nh3;
@@ -166,12 +165,12 @@
 				})
 	</script>
 
-	<div class="navbar">
-	  <a href="home.html">HOME</a>
-	  <a href="plugin_bulgaria.html">BULGARIA</a>
-	  <a href="plugin_spain.html">SPAIN</a>
-	  <a href="plugin_greece.html">GREECE</a>
-	</div>
+<div class="navbar">
+	<a href="home.html">HOME</a>
+	<a href="plugin_bulgaria.html">SOFIA</a>
+	<a href="plugin_spain.html">SEVILLA</a>
+	<a href="plugin_greece.html">CHANIA</a>
+  </div>
 
 	<div class="col-md-2">
 		<table >
@@ -182,7 +181,7 @@
 				<th colspan="2"><img src=".\images\logo_v2.jpg"  width="100%" height="90px"></th>
 			</tr>
 			<tr>
-				<th id="pais" style="text-align: center;"></th>
+				<TH> SOFIA (Bulgaria)</TH>
 				<th id="fecha" style="text-align: center;"></th>
 			</tr>
 			<tr>
@@ -197,12 +196,12 @@
 							<th colspan='3' > Valores máximos y medios</th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> Máx </th>
+							<th bgcolor='#ff0040'> Máx </th>
 							<th bgcolor='#ffff4d'> Medio </th>
 							<th bgcolor=''> Unidades </th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> 1000 </th>
+							<th bgcolor='#ff0040'> 1000 </th>
 							<th bgcolor='#ffff4d'> 666 </th>
 							<th bgcolor=''> ppm </th>
 						</tr>
@@ -225,12 +224,12 @@
 							<th colspan='3' > Valores máximos y medios</th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> Máx </th>
+							<th bgcolor='#ff0040'> Máx </th>
 							<th bgcolor='#ffff4d'> Medio </th>
 							<th bgcolor=''> Unidades </th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> 25 </th>
+							<th bgcolor='#ff0040'> 25 </th>
 							<th bgcolor='#ffff4d'> 16 </th>
 							<th bgcolor=''> ppm </th>
 						</tr>
@@ -250,12 +249,12 @@
 							<th colspan='3' > Valores máximos y medios</th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> Máx </th>
+							<th bgcolor='#ff0040'> Máx </th>
 							<th bgcolor='#ffff4d'> Medio </th>
 							<th bgcolor=''> Unidades </th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> 40 </th>
+							<th bgcolor='#ff0040'> 40 </th>
 							<th bgcolor='#ffff4d'> 25 </th>
 							<th bgcolor=''> μg/m3 </th>
 						</tr>
@@ -275,12 +274,12 @@
 							<th colspan='3' > Valores máximos y medios de la OMS</th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> Máx </th>
+							<th bgcolor='#ff0040'> Máx </th>
 							<th bgcolor='#ffff4d'> Medio </th>
 							<th bgcolor=''> Unidades </th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> 50 </th>
+							<th bgcolor='#ff0040'> 50 </th>
 							<th bgcolor='#ffff4d'> 33 </th>
 							<th bgcolor=''> μg/m3 </th>
 						</tr>
@@ -300,12 +299,12 @@
 							<th colspan='3' > Valores máximos y medios de la OMS</th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> Máx </th>
+							<th bgcolor='#ff0040'> Máx </th>
 							<th bgcolor='#ffff4d'> Medio </th>
 							<th bgcolor=''> Unidades </th>
 						</tr>
 						<tr>
-							<th bgcolor='firebrick'> 25 </th>
+							<th bgcolor='#ff0040'> 25 </th>
 							<th bgcolor='#ffff4d'> 16 </th>
 							<th bgcolor=''> μg/m3 </th>
 						</tr>
